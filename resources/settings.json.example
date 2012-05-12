@@ -1,0 +1,7 @@
+{
+  "codebasehq": { 
+    "base_uri": "http://api3.codebasehq.com/",
+    "project_name": "",
+    "authorization_header": "Basic your_base64_encoded_credentials_go_here"
+  }
+}
