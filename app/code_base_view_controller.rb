@@ -47,10 +47,10 @@ class CodeBaseViewController < UITableViewController
       @tickets = []
       tickets_url = "#{app_settings[:base_uri]}#{app_settings[:project_name]}/tickets?query=status:New%20status:%22In%20Progress%22"
       BubbleWrap::HTTP.get(tickets_url, http_request_options) do |response|
-        parser = BubbleWrap::XML.parse(response.body.to_str)
+        parser = BrutalWrap::XML.parse(response.body.to_str)
         tickets = parser.tickets
         reloadTickets(tickets)
-      end
+     end
 
     end
 

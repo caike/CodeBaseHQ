@@ -1,4 +1,4 @@
-module BubbleWrap
+module BrutalWrap
 
   module XML
 
